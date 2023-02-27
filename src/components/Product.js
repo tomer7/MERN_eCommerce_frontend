@@ -11,7 +11,7 @@ const Product = ({ product }) => {
       <Card className='my-3 ' style={{ borderRadius: '3%', border: 'none' }}>
          <Link to={`/product/${product._id}`}>
             <Card.Img
-               src={`http://localhost:5000/api/upload/products/${product._id}/image`}
+               src={`${process.env.REACT_APP_BACK_ADDRESS}/api/upload/products/${product._id}/image`}
                variant='top'
                style={{
                   borderRadius: '3%'
